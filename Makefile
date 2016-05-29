@@ -2,9 +2,10 @@ PY=python
 PELICAN=pelican
 PELICANOPTS=
 
+OUTPUT_DIR_NAME=dist
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/dist
+OUTPUTDIR=$(BASEDIR)/$(OUTPUT_DIR_NAME)
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -82,6 +83,8 @@ s3_upload: publish
 	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
 
 github: publish
-	git subtree push --prefix $(OUTPUTDIR) origin master
+	git subtree push --prefix $(OUTPUT_DIR_NAME) origin master
+    # If updates are rejected because the pushed branch tip is behind its remote use the command below
+    # git push origin `git subtree split --prefix $(OUTPUT_DIR_NAME) develop`:master --force
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload github
