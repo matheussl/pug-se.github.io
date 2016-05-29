@@ -15,7 +15,9 @@ Como forma de incentivar o uso, o site foi criado para rodar em **[Python 3](htt
 
 Em seguida, clonamos o repositório:
 
-    (pug-se)$ git clone https://github.com/pug-se/pug-se.git
+    (pug-se)$ git clone https://github.com/pug-se/pug-se.git -b develop
+    
+Neste ponto é importante ressaltar o parâmetro `-b develop`, que é utilizado para fazer checkout diretamente no branch develop ao invés do master. É no branch develop que o código fonte do site se encontra. **O branch master é utilizado apenas para a publicação.**  
 
 Será criada a cópia local na qual iremos trabalhar:
 
@@ -48,6 +50,12 @@ E, assumindo que a versão padrão do Python no seu sistema é a 2.x, substitua 
 ### Criando e modificando conteúdo
 
 A [documentação do Pelican](http://docs.getpelican.com/en/3.2/getting_started.html#writing-content-using-pelican) é bastante completa nesse ponto. Em caso de dúvidas, pedimos que poste sua pergunta nas [issues](https://github.com/pug-se/pug-se/issues) do projeto, de preferência marcando-a com o label *question*.
+
+### Publicando conteúdo
+
+Ainda utilizando o Makefile podemos utilizar o target `github` para publicar nossas alterações. Automaticamente será feito o deploy da pasta `dist/` para o branch master no github.
+
+    (pug-se)$ make github
 
 ### Quer contribuir?
 
