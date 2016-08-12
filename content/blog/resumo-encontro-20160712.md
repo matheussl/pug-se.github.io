@@ -9,7 +9,7 @@ Summary: Resumo do 3º Encontro do Python User Group Sergipe, realizado em 12 de
 
 No último dia 12 de julho de 2016, foi realizado o terceiro encontro de usuários Python de Sergipe, o segundo neste ano! O meetup aconteceu no espaço da [Rede+](http://gruporedemais.com/).
 
-Depois do último encontro, a chama da comunidade foi acesa e agora teremos um grupo mais forte e com encontros recorrentes! [Não perca nenhuma reunião participando do nosso grupo no Meetup](http://www.meetup.com/pt-BR/pug-se/].
+Depois do último encontro, a chama da comunidade foi acesa e agora teremos um grupo mais forte e com encontros recorrentes! [Não perca nenhuma reunião participando do nosso grupo no Meetup](http://www.meetup.com/pt-BR/pug-se/).
 
 # Paralelismo e Concorrência em Python
 
