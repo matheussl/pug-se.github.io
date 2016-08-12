@@ -16,7 +16,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('Lista de Discussão', 'https://groups.google.com/forum/#!forum/pug-se'),)
+LINKS = (('Lista de Discussão', 'https://groups.google.com/forum/#!forum/pug-se'),
+         ('Telegram', 'https://telegram.me/pugse'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
