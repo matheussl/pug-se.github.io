@@ -3,7 +3,8 @@ Date: 2016-07-12 19:00
 Tags: encontro, paralelismo, concorrência, análise de dados, big data
 Slug: resumo-encontro-20160712
 Author: Erick Mendonça
-Summary: Resumo do 3º Encontro do Python User Group Sergipe, realizado em 12 de julho de 2016, na Rede+, em Aracaju, Sergipe. 
+Summary: Resumo do 3º Encontro do Python User Group Sergipe, realizado em 12 de julho de 2016, na Rede+, em Aracaju, Sergipe.
+Image: images/banners/background.jpg
 
 
 
